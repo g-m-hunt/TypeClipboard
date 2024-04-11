@@ -15,7 +15,7 @@ namespace TypeClipboard
         private bool _typeEnter = false;
         public bool TypeEnter { get => _typeEnter; set => _typeEnter = value; }
 
-        public void Type(String str, int delay = 2000)
+        public void Type(String str, int delay = 5000)
         {
             Thread.Sleep(delay);
             foreach (Char c in str.ToCharArray())
@@ -74,7 +74,7 @@ namespace TypeClipboard
             }
         }
 
-        public void TypeClipboard(int delay = 2000)
+        public void TypeClipboard(int delay = 5000)
         {
             if (Clipboard.ContainsText(TextDataFormat.UnicodeText))
             {
