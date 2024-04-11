@@ -34,7 +34,7 @@ namespace TypeClipboard
 
         private void button1_Click(object sender, EventArgs e)
         {
-            _tc.TypeClipboard(2000);
+            _tc.TypeClipboard(5000);
         }
 
         public void UpdateTextbox(EventArgs e = null)
